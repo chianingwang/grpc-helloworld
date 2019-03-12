@@ -16,7 +16,7 @@ $ go get -u github.com/golang/protobuf/protoc-gen-go
 $ export PATH=$PATH:$GOPATH/bin
 ```
 
-* Build
+* Build ( If it builded already such as this repo, then we can skip build )
 ```
 $ cd helloworld
 $ protoc -I helloworld/ protos/helloworld.proto --go_out=plugins=grpc:helloword
@@ -53,7 +53,7 @@ or
 $ sudo python -m pip install grpcio-tools
 ```
 
-* Build
+* Build ( If it builded already such as this repo, then we can skip build )
 ```
 $ cd helloworld/python
 $ python -m grpc_tools.protoc -I../protos --python_out=. --grpc_python_out=. ../protos/helloworld.proto
